@@ -12,7 +12,7 @@ import java.io.IOException;
 public class CartService {
 
     public int totalAmount(Long userId) throws RestClientException, IOException {
-        String baseUrl = "http://localhost:8181/cart/order/" + userId;
+        String baseUrl = "http://localhost:8181/cart/total/" + userId;
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<Integer> response = null;
         try {

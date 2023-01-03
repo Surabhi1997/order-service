@@ -18,7 +18,7 @@ public class OrderController {
 
     @GetMapping("/checkout/{userId}")
     public int checkout(@PathVariable Long userId) throws IOException {
-       return cartService.totalAmount(userId);
+        return cartService.totalAmount(userId);
     }
 
 }
